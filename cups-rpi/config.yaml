@@ -10,3 +10,6 @@ arch:
 init: false
 host_dbus: true
 usb: true
+ports:
+  631/tcp: 631
+webui: http://[HOST]:[PORT:631]/dashboard
