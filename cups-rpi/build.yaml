@@ -1,0 +1,11 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
+build_from:
+  armhf: "lemariva/rpi-cups:latest"
+  armv7: "lemariva/rpi-cups:latest"
+labels:
+  org.opencontainers.image.title: "Raspberry Pi CUPS Home Assistant Addon"
+  org.opencontainers.image.description: "CUPS addon for Home Assistant. Based on lemariva/rpi-cups"
+  org.opencontainers.image.source: "https://github.com/leoedin/ha-cups-rpi"
+  org.opencontainers.image.licenses: "Apache License 2.0"
+args:
+  TEMPIO_VERSION: "2021.05.0"

@@ -1,0 +1,12 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Home Assistant CUPS Raspberry Pi
+version: "1.1.0"
+slug: rpi-cups
+description: CUPS for Home Assistant on the Raspberry Pi. Based on https://hub.docker.com/r/lemariva/rpi-cups
+url: "https://github.com/leoedin/ha-cups-rpi/cups-rpi"
+arch:
+  - armhf
+  - armv7
+init: false
+host_dbus: true
+usb: true
