@@ -1,1 +1,0 @@
-FROM lemariva/rpi-cups:latest

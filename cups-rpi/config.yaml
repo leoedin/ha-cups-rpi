@@ -5,11 +5,18 @@ slug: rpi-cups
 description: CUPS for Home Assistant on the Raspberry Pi. Based on https://hub.docker.com/r/lemariva/rpi-cups
 url: "https://github.com/leoedin/ha-cups-rpi/cups-rpi"
 arch:
+  - aarch64
   - armhf
   - armv7
+  - amd64
 init: false
+image: olbat/cupsd
+version: latest
 host_dbus: true
 usb: true
+map:
+  - "config:rw"
 ports:
   631/tcp: 631
-webui: http://[HOST]:[PORT:631]/dashboard
+ports_description:
+  631/tcp: "CUPS web admin port"
