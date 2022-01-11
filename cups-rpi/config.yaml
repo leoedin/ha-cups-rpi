@@ -1,7 +1,7 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Home Assistant CUPS Raspberry Pi
 slug: rpi-cups
-description: CUPS for Home Assistant on the Raspberry Pi. Based on https://hub.docker.com/r/lemariva/rpi-cups
+description: CUPS for Home Assistant. Based on olbat/cupsd
 url: "https://github.com/leoedin/ha-cups-rpi/cups-rpi"
 arch:
   - aarch64
